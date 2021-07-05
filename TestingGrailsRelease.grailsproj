@@ -1,0 +1,37 @@
+<project>
+  <grailsBuild>
+    <option commandLine="run-app"/>
+    <actions>
+      <action actionName="Clean" action="clean"/>
+      <action actionName="Compile Project" action="compile"/>
+      <action actionName="Compile and Run Project" action="run-app"/>
+      <action actionName="Test Project" action="test-app"/>
+      <action actionName="Release Project" action="war"/>
+      <action actionName="Create a Service" action="create-service &lt;name>"/>
+      <action actionName="Create a Domain" action="create-domain &lt;name>"/>
+      <action actionName="Create a Controller" action="create-controller &lt;name>"/>
+    </actions>
+  </grailsBuild>
+  <gradleBuild>
+    <option commandLine="clean run"/>
+    <actions>
+      <action actionName="Clean" action="clean"/>
+      <action actionName="Publish to Maven Local" action="publishToMavenLocal"/>
+      <action actionName="Clean and Run" action="clean run"/>
+      <action actionName="Clean and Build" action="clean build"/>
+    </actions>
+  </gradleBuild>
+  <classpaths>
+    <class path="src/main/groovy"/>
+    <class path="src/main/java"/>
+    <class path="grails-app/controllers"/>
+    <class path="grails-app/services"/>
+    <class path="grails-app/domain"/>
+    <class path="scripts"/>
+    <class path="src/test/groovy"/>
+    <class path="src/test/java"/>
+  </classpaths>
+  <options>
+    <option jdkType="jdk-8"/>
+  </options>
+</project>
